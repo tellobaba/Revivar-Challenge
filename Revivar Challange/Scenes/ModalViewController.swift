@@ -93,8 +93,8 @@ class ModalViewController: UIViewController {
             print("Error saving image to photo library: \(error.localizedDescription)")
         } else {
             // Image saved successfully
-            let sheet = UIAlertController(title: "PictureSaved", message: "Picture has been saved to gallery", preferredStyle: .actionSheet)
-            sheet.addAction(UIAlertAction(title: "ok", style: .default,handler:nil))
+            let sheet = UIAlertController(title: "Saved", message: "Your Image has been saved", preferredStyle: .actionSheet)
+            sheet.addAction(UIAlertAction(title: "Nice", style: .default,handler:nil))
             present(sheet, animated: true)
             
             print("Image saved to photo library")
