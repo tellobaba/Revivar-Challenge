@@ -13,6 +13,9 @@
 		D0A5197C29CB6D87000C41C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A5197B29CB6D87000C41C8 /* Assets.xcassets */; };
 		D0A5197F29CB6D87000C41C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A5197D29CB6D87000C41C8 /* LaunchScreen.storyboard */; };
 		D0A5198729CB7B84000C41C8 /* PickScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A5198629CB7B84000C41C8 /* PickScreen.swift */; };
+		D0BEB7A929CB8E07000E6068 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEB7A829CB8E07000E6068 /* APICall.swift */; };
+		D0BEB7CD29CC744A000E6068 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEB7CC29CC744A000E6068 /* UIView+Extension.swift */; };
+		D0BEB7CF29CC9043000E6068 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEB7CE29CC9043000E6068 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D0A5197E29CB6D87000C41C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A5198029CB6D87000C41C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A5198629CB7B84000C41C8 /* PickScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScreen.swift; sourceTree = "<group>"; };
+		D0BEB7A829CB8E07000E6068 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		D0BEB7CC29CC744A000E6068 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D0BEB7CE29CC9043000E6068 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		D0A5197129CB6D85000C41C8 /* Revivar Challange */ = {
 			isa = PBXGroup;
 			children = (
+				D0BEB7D029CC90FF000E6068 /* Scenes */,
+				D0BEB7CB29CC73F5000E6068 /* Extension */,
 				D0A5197229CB6D85000C41C8 /* AppDelegate.swift */,
 				D0A5197429CB6D85000C41C8 /* SceneDelegate.swift */,
-				D0A5197629CB6D85000C41C8 /* ViewController.swift */,
-				D0A5198629CB7B84000C41C8 /* PickScreen.swift */,
+				D0BEB7A829CB8E07000E6068 /* APICall.swift */,
 				D0A5197B29CB6D87000C41C8 /* Assets.xcassets */,
 				D0A5197D29CB6D87000C41C8 /* LaunchScreen.storyboard */,
 				D0A5198029CB6D87000C41C8 /* Info.plist */,
 			);
 			path = "Revivar Challange";
+			sourceTree = "<group>";
+		};
+		D0BEB7CB29CC73F5000E6068 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEB7CC29CC744A000E6068 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D0BEB7D029CC90FF000E6068 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D0A5197629CB6D85000C41C8 /* ViewController.swift */,
+				D0A5198629CB7B84000C41C8 /* PickScreen.swift */,
+				D0BEB7CE29CC9043000E6068 /* ModalViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,10 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BEB7CD29CC744A000E6068 /* UIView+Extension.swift in Sources */,
 				D0A5197729CB6D85000C41C8 /* ViewController.swift in Sources */,
 				D0A5197329CB6D85000C41C8 /* AppDelegate.swift in Sources */,
+				D0BEB7A929CB8E07000E6068 /* APICall.swift in Sources */,
 				D0A5198729CB7B84000C41C8 /* PickScreen.swift in Sources */,
 				D0A5197529CB6D85000C41C8 /* SceneDelegate.swift in Sources */,
+				D0BEB7CF29CC9043000E6068 /* ModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +310,7 @@
 				DEVELOPMENT_TEAM = 655K34WV58;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Revivar Challange/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs access to your photo library to save images downloaded from the internet";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -309,6 +338,7 @@
 				DEVELOPMENT_TEAM = 655K34WV58;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Revivar Challange/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs access to your photo library to save images downloaded from the internet";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
